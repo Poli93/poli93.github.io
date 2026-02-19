@@ -119,13 +119,27 @@ if (typeof $WowheadPower == "undefined") {
         function init() {
             if (isRemote) {
                 var script = document.createElement("script");
-                // script.src = (document.location.protocol != "https:" ? "http:": document.location.protocol) + "//wowjs.zamimg.com/js/basic.js?5";
                 script.src = g_staticUrl + "/js/basic.js";
                 head.appendChild(script);
+
+                var link = document.createElement("link");
+                link.type = "text/css";
+                link.href = g_staticUrl + "/css/basic.css";
+                link.rel = "stylesheet";
+                head.appendChild(link);
             }
-            else {
-                attachEvent();
-            }
+            attachEvent();
+
+            onDOMReady(function () {
+                if (typeof aowow_tooltips != "undefined") {
+                    for (var i = 0; i < document.links.length; i++) {
+                        var link = document.links[i];
+                        scanElement(link);
+                    }
+
+                    initCSS();
+                }
+            });
 
             for (var type in SCALES) {
                 for (var localeId in LOCALES) {
@@ -180,7 +194,11 @@ if (typeof $WowheadPower == "undefined") {
             }
 
             eventAttached = true;
-            $WH.aE(document, "mouseover", onMouseOver);
+            if (document.addEventListener) {
+                document.addEventListener("mouseover", onMouseOver, false);
+            } else if (document.attachEvent) {
+                document.attachEvent("onmouseover", onMouseOver);
+            }
         }
 
         function onDOMReady(func) {
@@ -193,12 +211,11 @@ if (typeof $WowheadPower == "undefined") {
 
         this.init = function () {
             if (isRemote) {
-                $WH.ae(head, $WH.ce("link", {
-                    type: "text/css",
-                    // href: (document.location.protocol != "https:" ? "http:": document.location.protocol) + "//wowcss.zamimg.com/css/basic.css?5",
-                    href: g_staticUrl + "/css/basic.css",
-                    rel:  "stylesheet"
-                }));
+                var link = document.createElement("link");
+                link.type = "text/css";
+                link.href = g_staticUrl + "/css/basic.css";
+                link.rel = "stylesheet";
+                head.appendChild(link);
             }
             attachEvent();
 
@@ -432,8 +449,8 @@ if (typeof $WowheadPower == "undefined") {
                         // t.style.paddingLeft = "18px !important";
                         t.setAttribute("style", t.getAttribute("style") + "; padding-left:18px !important;");
                         t.style.verticalAlign = "center";
-                        // t.style.background = "url(" + (document.location.protocol != "https:" ? "http:": document.location.protocol) + "//wowimg.zamimg.com/images/wow/icons/tiny/" + data.icon.toLocaleLowerCase() + ".gif) left center no-repeat"
                         t.style.background = "url(" + g_staticUrl + "/images/wow/icons/tiny/" + data.icon.toLocaleLowerCase() + ".gif) left center no-repeat"
+
                     }
 
                     if (aowow_tooltips.colorlinks) {
@@ -447,6 +464,7 @@ if (typeof $WowheadPower == "undefined") {
         }
 
         function onMouseOver(e) {
+            if (typeof $WH == "undefined" || !$WH.$E) return;
             e = $WH.$E(e);
             var t = e._target;
             var i = 0;
@@ -578,8 +596,7 @@ if (typeof $WowheadPower == "undefined") {
                 localeDomain = $WH.g_getDomainFromLocale(locale),
                 url = g_host + "/";
 
-            // $WH.g_ajaxIshRequest(url + "?" + LOOKUPS[type][1] + "=" + id + "&power" + p);
-            $WH.g_ajaxIshRequest(url + "?" + LOOKUPS[type][1] + "=" + id + "&domain=" + localeDomain + "&power" + p);
+            $WH.g_ajaxIshRequest(url + "?" + LOOKUPS[type][1] + "=" + id + "&power" + p);
             if (SCALES[type] && SCALES[type][locale] == SCALES_NONE) {
                 $WH.g_ajaxIshRequest(url + SCALES[type].url);
                 SCALES[type][locale] = SCALES_QUERYING;

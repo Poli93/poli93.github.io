@@ -8225,6 +8225,7 @@
 {"effectId":3794,"itemId":44068,"spellId":59773,"name":"Inscription of Dominance","type":3,"stats":[0,0,0,0,0,23,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,15,0,0,0,0,0,0,0,0,0,0,0,0],"quality":3},
 {"effectId":3795,"itemId":44069,"spellId":59777,"name":"Arcanum of Triumph","type":1,"stats":[0,0,0,0,0,0,0,0,0,0,0,50,0,0,0,0,0,0,0,0,0,50,0,0,0,0,0,20,0,0,0,0,0,0,0,0,0,0,0,0],"quality":3},
 {"effectId":3796,"itemId":44075,"spellId":59784,"name":"Arcanum of Dominance","type":1,"stats":[0,0,0,0,0,29,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,20,0,0,0,0,0,0,0,0,0,0,0,0],"quality":3},
+{"effectId":3797,"itemId":44075,"spellId":59784,"name":"Arcanum of Dominance","type":1,"stats":[0,0,0,0,0,29,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,20,0,0,0,0,0,0,0,0,0,0,0,0],"quality":3},
 {"effectId":3806,"itemId":44129,"spellId":59927,"name":"Lesser Inscription of the Storm","type":3,"stats":[0,0,0,0,0,18,0,0,10,0,0,0,0,10,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],"quality":3},
 {"effectId":3807,"itemId":44130,"spellId":59928,"name":"Lesser Inscription of the Crag","type":3,"stats":[0,0,0,0,0,18,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],"quality":3},
 {"effectId":3808,"itemId":44871,"spellId":59934,"name":"Greater Inscription of the Axe","type":3,"stats":[0,0,0,0,0,0,0,0,15,0,0,40,0,15,0,0,0,0,0,0,0,40,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0],"quality":4},

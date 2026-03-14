@@ -1,0 +1,11 @@
+import "./index-6d46f689.chunk.js";
+import { S as Spec, T as TypedEvent } from "./detailed_results-4a530cbe.chunk.js";
+import { S as Sim, P as Player } from "./preset_utils-d5ed5a2e.chunk.js";
+import { M as MageSimUI } from "./sim-3a3336d9.chunk.js";
+import "./apl_utils-4305ab4c.chunk.js";
+const index = "";
+const sim = new Sim();
+const player = new Player(Spec.SpecMage, sim);
+sim.raid.setPlayer(TypedEvent.nextEventID(), 0, player);
+new MageSimUI(document.body, player);
+//# sourceMappingURL=index-58c02b25.entry.js.map

@@ -1,0 +1,10 @@
+import "./index-6d46f689.chunk.js";
+import { S as Spec, T as TypedEvent } from "./detailed_results-4a530cbe.chunk.js";
+import { S as Sim, P as Player } from "./preset_utils-458944f4.chunk.js";
+import { D as DeathknightSimUI } from "./sim-b8a4e2b6.chunk.js";
+const index = "";
+const sim = new Sim();
+const player = new Player(Spec.SpecDeathknight, sim);
+sim.raid.setPlayer(TypedEvent.nextEventID(), 0, player);
+new DeathknightSimUI(document.body, player);
+//# sourceMappingURL=index-5b68ae44.entry.js.map

@@ -1,0 +1,10 @@
+import "./index-6d46f689.chunk.js";
+import { S as Spec, T as TypedEvent } from "./detailed_results-7b88f697.chunk.js";
+import { S as Sim, P as Player } from "./preset_utils-855673bf.chunk.js";
+import { R as RestorationDruidSimUI } from "./sim-ca579103.chunk.js";
+const index = "";
+const sim = new Sim();
+const player = new Player(Spec.SpecRestorationDruid, sim);
+sim.raid.setPlayer(TypedEvent.nextEventID(), 0, player);
+new RestorationDruidSimUI(document.body, player);
+//# sourceMappingURL=index-0811d5a6.entry.js.map

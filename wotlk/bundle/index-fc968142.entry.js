@@ -1,0 +1,12 @@
+import "./index-6d46f689.chunk.js";
+import { S as Spec, T as TypedEvent } from "./detailed_results-6881a4e3.chunk.js";
+import { S as Sim, P as Player } from "./preset_utils-4ea4a78a.chunk.js";
+import { H as HunterSimUI } from "./sim-dc979ea5.chunk.js";
+import "./suggest_gems_action-120ac3d4.chunk.js";
+import "./apl_utils-e5278a2a.chunk.js";
+const index = "";
+const sim = new Sim();
+const player = new Player(Spec.SpecHunter, sim);
+sim.raid.setPlayer(TypedEvent.nextEventID(), 0, player);
+new HunterSimUI(document.body, player);
+//# sourceMappingURL=index-fc968142.entry.js.map

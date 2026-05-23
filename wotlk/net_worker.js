@@ -3,7 +3,7 @@ importScripts('wasm_exec.js');
 const go = new Go();
 let mod, inst;
 
-// 1. Define the handshake function /// 
+// 1. Define the handshake function
 function wasmready() {
     postMessage({ msg: "ready" });
 }

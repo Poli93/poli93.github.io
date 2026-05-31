@@ -1,2 +1,0 @@
-import"./index-6d46f689.chunk.js";import{S as e,T as s}from"./detailed_results-950d53b0.chunk.js";import{S as n,P as t}from"./preset_utils-8671f8a3.chunk.js";import{P as a}from"./sim-b3967133.chunk.js";import"./apl_utils-fc9f4d4b.chunk.js";const i=new n,o=new t(e.SpecProtectionPaladin,i);o.enableHealing(),i.raid.setPlayer(s.nextEventID(),0,o),new a(document.body,o);
-//# sourceMappingURL=index-3d038a05.entry.js.map

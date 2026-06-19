@@ -1,2 +1,0 @@
-import"./index-6d46f689.chunk.js";import{S as s,T as e}from"./detailed_results-743a4bbc.chunk.js";import{S as t,P as n}from"./preset_utils-f45ba7dc.chunk.js";import{F as r}from"./sim-10bf732c.chunk.js";import"./suggest_gems_action-f8812f68.chunk.js";import"./apl_utils-9685ddfb.chunk.js";const i=new t,a=new n(s.SpecFeralDruid,i);i.raid.setPlayer(e.nextEventID(),0,a),new r(document.body,a);
-//# sourceMappingURL=index-41bd6b2a.entry.js.map

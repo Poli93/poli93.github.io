@@ -1,2 +1,0 @@
-import"./index-6d46f689.chunk.js";import{S as s,T as e}from"./detailed_results-79210d22.chunk.js";import{S as t,P as n}from"./preset_utils-899665b7.chunk.js";import{W as r}from"./sim-eaf10c3a.chunk.js";import"./suggest_gems_action-86dffb95.chunk.js";import"./deep_wounds_inputs-1074ffbd.chunk.js";const o=new t,i=new n(s.SpecWarrior,o);o.raid.setPlayer(e.nextEventID(),0,i),new r(document.body,i);
-//# sourceMappingURL=index-c4094816.entry.js.map

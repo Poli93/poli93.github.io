@@ -1,2 +1,0 @@
-import"./index-6d46f689.chunk.js";import{S as s,T as e}from"./detailed_results-23e3db26.chunk.js";import{S as t,P as n}from"./preset_utils-91386925.chunk.js";import{D as i}from"./sim-c86820f8.chunk.js";import"./suggest_gems_action-05a65171.chunk.js";const o=new t,r=new n(s.SpecDeathknight,o);o.raid.setPlayer(e.nextEventID(),0,r),new i(document.body,r);
-//# sourceMappingURL=index-7efadd2a.entry.js.map

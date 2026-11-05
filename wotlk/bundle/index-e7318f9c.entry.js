@@ -1,2 +1,0 @@
-import"./index-6d46f689.chunk.js";import{S as e,T as s}from"./detailed_results-36d8050a.chunk.js";import{S as n,P as t}from"./preset_utils-76230ca8.chunk.js";import{F as a}from"./sim-a119ee49.chunk.js";import"./suggest_gems_action-1dc430e2.chunk.js";import"./apl_utils-915bd421.chunk.js";const i=new n,r=new t(e.SpecFeralTankDruid,i);r.enableHealing(),i.raid.setPlayer(s.nextEventID(),0,r),new a(document.body,r);
-//# sourceMappingURL=index-e7318f9c.entry.js.map

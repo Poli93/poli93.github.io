@@ -562,7 +562,9 @@
 // Wasm binary calls this function when its done loading.
 function wasmready() {
 	postMessage({
-		msg: "ready"
+		msg: "ready",
+		// Lets the UI tell wasm workers (which it can run several of) from the local app's net worker.
+		isWasm: true,
 	});
 }
 
@@ -610,6 +612,10 @@ addEventListener('message', async (e) => {
 			});
 		}],
 		['statWeights', statWeights],
+		['raidSimRequestSplit', raidSimRequestSplit],
+		['raidSimResultCombination', raidSimResultCombination],
+		['statWeightRequests', statWeightRequests],
+		['statWeightCompute', statWeightCompute],
 		['statWeightsAsync', (data) => {
 			return statWeightsAsync(data, (result) => {
 				postMessage({

@@ -1,2 +1,0 @@
-import"./index-6d46f689.chunk.js";import{S as e,T as s}from"./detailed_results-a55d60c8.chunk.js";import{S as t,P as n}from"./preset_utils-30b29691.chunk.js";import{E as m}from"./sim-6f94982d.chunk.js";import"./suggest_gems_action-12ed74e4.chunk.js";import"./totem_inputs-55471f38.chunk.js";const o=new t,a=new n(e.SpecEnhancementShaman,o);o.raid.setPlayer(s.nextEventID(),0,a),new m(document.body,a);
-//# sourceMappingURL=index-143c8ba7.entry.js.map

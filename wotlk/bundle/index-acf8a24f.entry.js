@@ -1,2 +1,0 @@
-import"./index-6d46f689.chunk.js";import{S as s,T as e}from"./detailed_results-1e100459.chunk.js";import{S as t,P as n}from"./preset_utils-196dec53.chunk.js";import{S as o}from"./sim-55133fdd.chunk.js";import"./suggest_gems_action-8258bf19.chunk.js";const r=new t,i=new n(s.SpecShadowPriest,r);r.raid.setPlayer(e.nextEventID(),0,i),new o(document.body,i);
-//# sourceMappingURL=index-acf8a24f.entry.js.map
